@@ -6,7 +6,7 @@ class Solution:
         else:
             d = {}
             max_count = -1
-            d = dict(Counter(paragraph.lower().replace(',',' ').replace('?',' ').replace('!',' ').replace(';','                       ').replace('.', ' ').replace("'",'').split()))
+            d = dict(Counter(paragraph.lower().replace(',',' ').replace('?',' ').replace('!',' ').replace(';',' ').replace('.', ' ').replace("'",'').split()))
            
             
             for word,count in d.items():
