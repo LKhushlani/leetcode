@@ -9,7 +9,7 @@ def mergeLinkedLists(headOne, headTwo):
     # Write your code here.
 	temp = current = LinkedList(-1)
 	
-	while headOne or HeadTwo:
+	while headOne or headTwo:
         if headOne is not None and headTwo is not None:
             if headOne.value < headTwo.value:
                 current.next = headOne
