@@ -1,17 +1,18 @@
 # edge cases  k = 0, k > len(ll), k is -ve      then not from thr end but beginning 0-1-2-3-4-5-6-7
 def shiftLinkedList(head, k):
     # Write your code here.
-    total_elements = 0
+    total_elements = 1
 	original_tail_node = head
-	while node is not None:
-		total_elements += 1
+	while original_tail_node.next is not None:
         original_tail_node = original_tail_node.next
+		total_elements += 1
+
         
     offset = abs(k) % total_elements
     if offset == 0:
         return head
 
-    new_tail_pos = total_elements - offset if offset > 0 else offset
+    new_tail_pos = total_elements - offset if k > 0 else offset
 
     new_tail_node = head
     for i in range(1, new_tail_pos):
