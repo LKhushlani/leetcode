@@ -1,3 +1,4 @@
+#  O(n *m) time ,  O n*m space 
 def numberOfWaysToTraverseGraph(width, height):
     # Write your code here.
 
