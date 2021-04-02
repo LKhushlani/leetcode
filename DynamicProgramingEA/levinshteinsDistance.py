@@ -1,3 +1,4 @@
+#  Onm time , Onm space 
 def levenshteinDistance(str1, str2):
 
     edits = [[x for x in range(len(str2) +1 )] for y in range(len(str1) +1 )]
@@ -19,3 +20,7 @@ def levenshteinDistance(str1, str2):
             
 
 levenshteinDistance('abc', 'yabd')
+
+
+#  new soln by storing only last 2 rows, 
+#  space O min(n , m)

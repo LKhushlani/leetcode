@@ -1,3 +1,6 @@
+#  s1 * s2 matrix , 
+#   if 2 chars same, get the string from diagonal, else , get the longest from up or left
+
 def longestCommonSubsequence(str1, str2):
 
     subsequence = [[[] for i in range(len(str1)+1)] for j in range(len(str2)+1)]
