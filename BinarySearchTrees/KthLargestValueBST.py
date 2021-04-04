@@ -14,8 +14,8 @@ class TreeNode:
 def findKthLargestValueInBst(tree, k):
     # Write your code here.
     treeInfo = TreeNode(0, -1)
-
-    reverseInorderTraversal(tree.right,treeInfo, k)
+    reverseInorderTraversal(tree,treeInfo, k)
+	return treeInfo.latestVisitedNode
 
 
 # O(n+k) time , O h space  
@@ -23,10 +23,10 @@ def reverseInorderTraversal(node, treeInfo, k):
 
     if node is None or treeInfo.noOfVisitedNodes >=k:
         return 
-    
+    reverseInorderTraversal(node.right, treeInfo, k)
     if treeInfo.noOfVisitedNodes < k:
         treeInfo.noOfVisitedNodes += 1
         treeInfo.latestVisitedNode  = node.value
-        findKthLargestValueInBstHelper(node.left,treeInfo, k)
+        reverseInorderTraversal(node.left,treeInfo, k)
 
     
