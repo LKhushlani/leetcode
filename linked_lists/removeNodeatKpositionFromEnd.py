@@ -1,3 +1,4 @@
+# This is an input class. Do not edit.
 class LinkedList:
     def __init__(self, value):
         self.value = value
@@ -20,24 +21,12 @@ def removeKthNodeFromEnd(head, k):
         node = node.next
         nextN = node
         count +=1 
+		print("prev", prev, "next", nextN.value, 'count', count)
     if count == index and index != 1:
         prevN.next = nextN.next
 
     if index == 1:
         head.value = head.next.value
         head.next = head.next.next
-
-
-
-    
-    
-    
-
-
-    
-
-
-
-
-
-
+	
+		
