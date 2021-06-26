@@ -1,6 +1,16 @@
 # Do not edit the class below except for
 # the insert method. Feel free to add new
 # properties and methods to the class.
+#  Data Structure : Heaps 
+# form 2 heaps 
+# lower half (max heap)and greater Half(min heap)
+# get max from lower half and min from greater half and calculate the median 
+# keep track of numbers either insert in min and same way 
+# insertion in heap is logn time than in array 
+# if both have even lengths take 1 from both , even length
+# else take top val of greatest length
+# insertion in non empty heap  , add to end and sift up
+
 class ContinuousMedianHandler:
     def __init__(self):
         # Write your code here.

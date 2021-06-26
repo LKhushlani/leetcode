@@ -1,4 +1,5 @@
-O nlogK time , OK space 
+# O nlogK time , OK space 
+# 
 def sortKSortedArray(array, k):
     # Write your code here.
 
@@ -6,6 +7,8 @@ def sortKSortedArray(array, k):
 							array[:min
 								  (k+1, len(array))
 								 ])
+                                # done to handle the edge case(else will give index error) where k > len(array) and 
+                                # therefore take len(arr) as k 
     nextIndexToInsert = 0
     for i in range(k+1, len(array)):
         minElement = minHeapWithKElements.remove()
