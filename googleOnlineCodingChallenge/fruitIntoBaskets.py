@@ -41,6 +41,8 @@ If we started at the first tree or the eighth tree, we would only collect 4 frui
 
 # On time complexity
 
+from typing import List
+
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
 
