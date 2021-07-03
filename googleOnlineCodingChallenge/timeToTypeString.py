@@ -18,7 +18,6 @@ def timeToType(keyboard, text):
     time  = 0
     initial_index = 0
     map  = { char:i for i ,char in enumerate(keyboard)}
-    print(map)
     
     for char in text:
         char_index = map[char]
