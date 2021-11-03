@@ -1,23 +1,18 @@
-from typing import List
-
+from typing import List, ParamSpecArgs
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         
         dp = [True] + [False] * len(s)
-        for idx in range(1,len(s)+1):
-            print("idx", idx)
+
+        for idx in range(1, len(s)+1):
             for word in wordDict:
-                print(word)
-                print(dp)
                 if dp[idx-len(word)] == True and s[:idx].endswith(word):
                     dp[idx] = True
+            print(dp)
 
         return dp[-1]
 
+            
 
-s  = Solution().wordBreak('leetcode', ['leet', 'code'])
-print(s)
-
-
-        
+print(Solution().wordBreak('leetcode', ['leet', 'code']))
         
