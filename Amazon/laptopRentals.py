@@ -25,10 +25,11 @@ def laptopRentals(times):
 
     startTimeIdx = 0
     endTimeIdx = 0
-    while startTimeIdx < len(startTimes):
-        if startTimes[startTimeIdx] <= endTimes[endTimeIdx]:
+    while startTimeIdx < len(times):
+        if startTimes[startTimeIdx] >= endTimes[endTimeIdx]:
             usedLaptops -=1
             endTimeIdx += 1
+
         usedLaptops +=1
         startTimeIdx +=1
 
