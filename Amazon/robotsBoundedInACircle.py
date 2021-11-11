@@ -11,8 +11,4 @@ class Solution:
             else:
                 dirX, dirY = dirY, -1 * dirX
 
-        return (x,y) == 0 or (dirX, dirY) != (0,1)
-
-    
-                
-        
+        return (x,y) == (0,0) or (dirX, dirY) != (0,1)
