@@ -4,7 +4,7 @@ class Solution:
         minPrice = float("inf")
         maxProfit = -float('inf')
         for p in prices:
-            
+        
             minPrice = min(minPrice,p)
             maxProfit = max(maxProfit,p-minPrice)
             print(maxProfit)
