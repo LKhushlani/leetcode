@@ -22,6 +22,7 @@ class Solution:
                 heapq.heappop(meetingRooms)
                 print(meetingRooms)
             
+            
             heapq.heappush(meetingRooms,i[1])
 
         print(meetingRooms)

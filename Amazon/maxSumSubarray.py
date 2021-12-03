@@ -15,7 +15,7 @@ class Solution:
             maxSum = max(maxSum,currentSum)
 
         return maxSum
-
+        
 s = Solution()
 maxSum = s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
 print(maxSum)
